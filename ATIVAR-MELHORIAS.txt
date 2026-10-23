@@ -1,0 +1,36 @@
+ESTOQMAIS — ATIVAÇÃO DAS MELHORIAS
+
+1. ANEXOS PRIVADOS
+No projeto Supabase mndqmxsmbaoqoedmjbdm, abra SQL Editor > New query.
+Cole o conteúdo de EstoqMais-Anexos.sql e clique em Run.
+Esse script cria um bucket privado. Cada conta acessa apenas sua pasta.
+Não apaga seus produtos, pedidos ou backups.
+Aceita PDF, JPG, PNG e WebP, até 5 MB e 10 anexos por pedido.
+Os anexos exigem internet. JSON contém referências, não os arquivos.
+Remover do pedido mantém o arquivo privado para restauração por backup.
+
+2. RECUPERAÇÃO DE SENHA POR E-MAIL
+Supabase > Authentication > URL Configuration.
+Site URL: https://jotappe23.github.io/estoqmais/
+Adicione também essa URL exata à lista Redirect URLs e salve.
+Na tela de login use Esqueci minha senha. Abra o link recebido por e-mail,
+defina a senha e entre novamente. O link sempre abre a versão online.
+A entrega depende da configuração de e-mail do Supabase e dos limites
+do serviço. Verifique spam. Se necessário configure um provedor SMTP.
+A senha local em outros PCs é atualizada no próximo login online.
+
+3. HISTÓRICO DE PREÇOS
+Menu Histórico de preços: escolha categoria, produto e fornecedor.
+Usa pedidos ativos já cadastrados, sem alterar suas compras.
+O preço unitário comparado não inclui IPI. Confira a unidade do produto.
+
+4. RESTAURAÇÃO
+Gerenciar backup online > Últimas 10 versões > Visualizar / restaurar.
+Confira a prévia, exporte a cópia atual e confirme a restauração desejada.
+A restauração cria uma nova versão online e mantém uma cópia local anterior.
+Conflitos ou alterações pendentes bloqueiam a restauração.
+
+5. ORÇAMENTO
+Dashboard e Compras avisam quando uma categoria atinge 80% ou 100%
+da projeção mensal. As projeções continuam editáveis em Compras.
+Os alertas consideram o mês inteiro e todos os fornecedores.

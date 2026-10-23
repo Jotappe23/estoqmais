@@ -1,19 +1,13 @@
-# EstoqMais 1.0
+# EstoqMais
 
-Aplicativo pessoal de controle de compras e fornecedores.
+Controle pessoal de compras, fornecedores, projeções mensais e relatórios.
 
-Este repositório contém somente o aplicativo e sua versão para PC. Os registros
-pessoais não estão incluídos: são carregados pelo login do EstoqMais no Supabase.
+https://jotappe23.github.io/estoqmais/
 
-## Publicação
+Inclui histórico de preços, alertas de orçamento em 80%/100%, prévia e restauração de backups, recuperação de senha por e-mail e anexos privados em pedidos.
 
-Em Settings > Pages, selecione Deploy from a branch, main e /(root).
-O banco Supabase existente e a conta do aplicativo permanecem os mesmos.
+Para ativar os anexos e configurar o retorno do e-mail de recuperação no Supabase, siga ATIVAR-MELHORIAS.txt. O bucket é privado com acesso por usuário.
 
-## Uso em outro PC
-
-Entre com sua conta EstoqMais. Na aba Baixar para PC, baixe o ZIP e extraia tudo.
-Abra EstoqMais.html ou execute Criar-atalho.vbs para criar um atalho no Windows.
-O primeiro login em cada navegador/arquivo precisa de internet.
+O aplicativo distribuído não contém os registros pessoais da conta. Os dados são carregados após autenticação no Supabase. JSON não contém os arquivos anexados.
 
 Idealização e criação: João Pedro do Nascimento Silva.
