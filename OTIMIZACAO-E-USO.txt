@@ -1,0 +1,53 @@
+ESTOQMAIS 1.0 — EDIÇÃO OTIMIZADA — 23/10/2026
+
+ATUALIZAÇÃO
+O banco deste projeto já recebeu a estrutura otimizada. Os scripts SQL são
+referência; não execute a configuração antiga para atualizar. Use a nova
+versão em todos os computadores. Antes de substituir uma versão antiga,
+confirme Salvo online e guarde um JSON externo se houver alterações locais.
+No primeiro acesso à edição otimizada, os dados são migrados por conta.
+O formato anterior fica preservado no Supabase para recuperação.
+Clientes antigos não podem sobrescrever a conta depois da migração.
+
+ECONOMIA
+Os salvamentos enviam apenas registros alterados. A verificação em repouso
+consulta somente a revisão a cada 90 segundos com a página visível; busca
+dados completos do mês apenas se houver alteração. Pedidos de outros meses
+não são baixados na abertura. A tela mostra no máximo 20 pedidos por página.
+O histórico recente usa diferenças reversíveis, sem duplicar toda a base
+a cada alteração. Mantém até 10 versões na interface de recuperação.
+
+SEM INTERNET
+Cadastros e o mês carregado permanecem disponíveis neste PC após um acesso
+online válido. Os outros meses exigem conexão. Alterações locais pendentes
+são enviadas na reconexão. Trocar de mês exige concluir o envio antes.
+
+BACKUPS
+Use Arquivos e cópias > Exportar backup completo para guardar todos os meses.
+A cópia local pode conter apenas o mês carregado e vem marcada PARCIAL.
+O sistema impede que um arquivo parcial substitua todo o histórico.
+Exportar mês/ano gera arquivo de consulta, não um backup completo restaurável.
+JSON não inclui PDFs/fotos, apenas referências ao armazenamento privado.
+Arquivar ano organiza os registros; não apaga compras nem libera espaço.
+Guarde uma cópia externa completa ao encerrar cada mês.
+
+ANEXOS
+Fotos JPG/PNG/WebP são reduzidas até 1600 pixels e convertidas para JPEG
+com qualidade 80%, somente quando o resultado for menor que o original.
+A compactação pode alterar detalhes e transparência. PDFs não são alterados.
+São aceitos até 20 MB de entrada e 5 MB após compactação; PDFs até 5 MB.
+O limite permanece 10 anexos por pedido. Remover do pedido mantém o arquivo
+privado para recuperação. Não há exclusão definitiva automática de anexos.
+
+NOVAS TELAS
+Uso e economia: estimativa dos conteúdos da sua conta e anexos. Não é a
+medição exata de toda a infraestrutura ou do tráfego mensal do projeto.
+Comparar períodos: gastos por categoria entre meses e entre anos.
+Compras > Pagamento: registro manual de valor pago, vencimento e saldo.
+Não realiza operações bancárias. Pedidos antigos iniciam sem informação.
+Possíveis duplicatas: avisa sobre pedidos iguais; não exclui automaticamente.
+
+SEGURANÇA E LIMITES
+A sincronização mantém controle de revisão e isolamento por conta.
+Não há garantia de armazenamento ilimitado. Consulte o uso no Supabase.
+Não compartilhe senhas ou backups JSON: dados locais/JSON não são criptografados.

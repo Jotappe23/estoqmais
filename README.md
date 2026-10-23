@@ -1,13 +1,21 @@
-# EstoqMais
-
-Controle pessoal de compras, fornecedores, projeções mensais e relatórios.
+# EstoqMais 1.0 — edição otimizada
 
 https://jotappe23.github.io/estoqmais/
 
-Inclui histórico de preços, alertas de orçamento em 80%/100%, prévia e restauração de backups, recuperação de senha por e-mail e anexos privados em pedidos.
+Controle de compras, fornecedores, projeções e relatórios. Idealização e criação: João Pedro do Nascimento Silva.
 
-Para ativar os anexos e configurar o retorno do e-mail de recuperação no Supabase, siga ATIVAR-MELHORIAS.txt. O bucket é privado com acesso por usuário.
+## Otimização
 
-O aplicativo distribuído não contém os registros pessoais da conta. Os dados são carregados após autenticação no Supabase. JSON não contém os arquivos anexados.
+- Salvamentos incrementais por registro com revisão, repetição segura e isolamento por conta.
+- Verificação leve da revisão a cada 90 segundos com a página visível.
+- Compras carregadas por mês; 20 pedidos por página.
+- Histórico recente com diferenças reversíveis. Formato anterior preservado durante a migração.
+- Fotos compactadas até 1600 pixels quando o resultado for menor. PDF original preservado.
+- Painel de uso com estimativas dos conteúdos da conta e anexos.
+- Comparação entre meses/anos, pagamentos manuais, possíveis duplicatas e arquivos anuais.
 
-Idealização e criação: João Pedro do Nascimento Silva.
+## Uso
+
+A estrutura otimizada deste projeto já foi configurada. Atualize todos os PCs. O primeiro acesso migra a conta preservando o formato anterior. Sem internet, estão disponíveis os cadastros e o mês carregado neste PC. Exporte um backup completo para guardar todos os períodos. JSON não inclui os arquivos anexados. Arquivar organiza sem apagar ou liberar espaço.
+
+Consulte OTIMIZACAO-E-USO.txt. Scripts SQL são referência; não execute a configuração antiga para atualizar. O pacote de PC e a página pública não incluem registros pessoais, que são carregados após autenticação no Supabase.
